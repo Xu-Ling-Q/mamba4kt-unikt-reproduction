@@ -1,0 +1,151 @@
+[10/30/26 03:34:30] INFO     Experiment directory:                   train.py:25
+                             runs/normal/Mamba4KT_assistments09_2026            
+                             1030-033430_fold0_bs64                             
+                    INFO     Building dataset: assistments09...      train.py:27
+                    INFO     Initializing trainer for model:         train.py:30
+                             Mamba4KT...                                        
+/home/lpq/.venvs/unikt-mamba/lib/python3.12/site-packages/mamba_ssm/utils/determinism.py:73: UserWarning: Deterministic mode: upgrade to Triton >= 3.4.0 for cached autotuning.
+  warnings.warn(msg)
+[10/30/26 03:34:36] INFO     Loading split_skill_sequence     data_source.py:769
+                             data:                                              
+                             /mnt/e/StudyWork/sota_kt_lab/wor                   
+                             k/mamba4kt_official_20261030/uni                   
+                             kt_data/assistments09/assistment                   
+                             s09_split_skill_sequence.parquet                   
+                              [sequence_id, seq_pos, label,                     
+                             user, question, interaction_id,                    
+                             skill, fold]                                       
+[10/30/26 03:34:36] INFO     Using K-fold cross-validation:  Mamba4KT_data.py:60
+                             fold 1/5                                           
+[10/30/26 03:34:37] INFO     Initializing Mamba4KT        Mamba4KT_trainer.py:90
+                             model...                                           
+                    INFO     Mamba4KT: Using Rasch        Mamba4KT_trainer.py:94
+                             embeddings with 17737                              
+                             questions                                          
+[10/30/26 03:34:37] INFO     Test evaluation will be         base_trainer.py:290
+                             skipped.                                           
+                    INFO     RunConfig archive saved to      base_trainer.py:372
+                             runs/normal/Mamba4KT_assistment                    
+                             s09_20261030-033430_fold0_bs64/                    
+                             run_config.yaml                                    
+                    INFO     Trainer built successfully      base_trainer.py:306
+[10/30/26 03:34:37] INFO     Starting training...                    train.py:34
+[10/30/26 03:34:57] INFO     Epoch 1/150                     base_trainer.py:575
+[10/30/26 03:35:12] INFO     Checkpoint saved to               checkpoint.py:229
+                             runs/normal/Mamba4KT_assistments0                  
+                             9_20261030-033430_fold0_bs64/best                  
+                             _model.pth                                         
+[10/30/26 03:35:12] INFO     Epoch 1/150 took 15.07s (train  base_trainer.py:610
+                             13.21s, val 1.72s)                                 
+                    INFO     Epoch 2/150                     base_trainer.py:575
+                    INFO     Checkpoint saved to               checkpoint.py:229
+                             runs/normal/Mamba4KT_assistments0                  
+                             9_20261030-033430_fold0_bs64/last                  
+                             _checkpoint.pth                                    
+[10/30/26 03:35:14] INFO     Checkpoint saved to               checkpoint.py:229
+                             runs/normal/Mamba4KT_assistments0                  
+                             9_20261030-033430_fold0_bs64/best                  
+                             _model.pth                                         
+[10/30/26 03:35:14] INFO     Epoch 2/150 took 4.57s (train   base_trainer.py:610
+                             4.13s, val 0.37s)                                  
+                    INFO     Epoch 3/150                     base_trainer.py:575
+                    INFO     Checkpoint saved to               checkpoint.py:229
+                             runs/normal/Mamba4KT_assistments0                  
+                             9_20261030-033430_fold0_bs64/last                  
+                             _checkpoint.pth                                    
+[10/30/26 03:35:19] INFO     Epoch 3/150 took 4.53s (train   base_trainer.py:610
+                             4.07s, val 0.41s)                                  
+                    INFO     Epoch 4/150                     base_trainer.py:575
+[10/30/26 03:35:19] INFO     Checkpoint saved to               checkpoint.py:229
+                             runs/normal/Mamba4KT_assistments0                  
+                             9_20261030-033430_fold0_bs64/best                  
+                             _model.pth                                         
+                    INFO     Checkpoint saved to               checkpoint.py:229
+                             runs/normal/Mamba4KT_assistments0                  
+                             9_20261030-033430_fold0_bs64/last                  
+                             _checkpoint.pth                                    
+[10/30/26 03:35:23] INFO     Checkpoint saved to               checkpoint.py:229
+                             runs/normal/Mamba4KT_assistments0                  
+                             9_20261030-033430_fold0_bs64/best                  
+                             _model.pth                                         
+[10/30/26 03:35:23] INFO     Epoch 4/150 took 4.90s (train   base_trainer.py:610
+                             4.40s, val 0.42s)                                  
+                    INFO     Epoch 5/150                     base_trainer.py:575
+[10/30/26 03:35:24] INFO     Checkpoint saved to               checkpoint.py:229
+                             runs/normal/Mamba4KT_assistments0                  
+                             9_20261030-033430_fold0_bs64/last                  
+                             _checkpoint.pth                                    
+[10/30/26 03:35:29] INFO     Epoch 5/150 took 5.37s (train   base_trainer.py:610
+                             4.92s, val 0.41s)                                  
+                    INFO     Epoch 6/150                     base_trainer.py:575
+[10/30/26 03:35:29] INFO     Checkpoint saved to               checkpoint.py:229
+                             runs/normal/Mamba4KT_assistments0                  
+                             9_20261030-033430_fold0_bs64/last                  
+                             _checkpoint.pth                                    
+[10/30/26 03:35:34] INFO     Epoch 6/150 took 5.43s (train   base_trainer.py:610
+                             4.80s, val 0.58s)                                  
+                    INFO     Epoch 7/150                     base_trainer.py:575
+[10/30/26 03:35:34] INFO     Checkpoint saved to               checkpoint.py:229
+                             runs/normal/Mamba4KT_assistments0                  
+                             9_20261030-033430_fold0_bs64/last                  
+                             _checkpoint.pth                                    
+[10/30/26 03:35:40] INFO     Epoch 7/150 took 5.24s (train   base_trainer.py:610
+                             4.74s, val 0.44s)                                  
+                    INFO     Epoch 8/150                     base_trainer.py:575
+[10/30/26 03:35:40] INFO     Checkpoint saved to               checkpoint.py:229
+                             runs/normal/Mamba4KT_assistments0                  
+                             9_20261030-033430_fold0_bs64/last                  
+                             _checkpoint.pth                                    
+[10/30/26 03:35:45] INFO     Epoch 8/150 took 5.17s (train   base_trainer.py:610
+                             4.69s, val 0.43s)                                  
+                    INFO     Epoch 9/150                     base_trainer.py:575
+[10/30/26 03:35:45] INFO     Checkpoint saved to               checkpoint.py:229
+                             runs/normal/Mamba4KT_assistments0                  
+                             9_20261030-033430_fold0_bs64/last                  
+                             _checkpoint.pth                                    
+[10/30/26 03:35:48] INFO     Epoch 9/150 took 5.39s (train   base_trainer.py:610
+                             4.93s, val 0.41s)                                  
+                    INFO     Epoch 10/150                    base_trainer.py:575
+[10/30/26 03:35:48] INFO     Checkpoint saved to               checkpoint.py:229
+                             runs/normal/Mamba4KT_assistments0                  
+                             9_20261030-033430_fold0_bs64/last                  
+                             _checkpoint.pth                                    
+[10/30/26 03:35:53] INFO     Epoch 10/150 took 5.32s (train  base_trainer.py:610
+                             4.80s, val 0.46s)                                  
+                    INFO     Epoch 11/150                    base_trainer.py:575
+[10/30/26 03:35:53] INFO     Checkpoint saved to               checkpoint.py:229
+                             runs/normal/Mamba4KT_assistments0                  
+                             9_20261030-033430_fold0_bs64/last                  
+                             _checkpoint.pth                                    
+[10/30/26 03:35:59] INFO     Epoch 11/150 took 5.52s (train  base_trainer.py:610
+                             4.87s, val 0.61s)                                  
+                    INFO     Epoch 12/150                    base_trainer.py:575
+[10/30/26 03:35:59] INFO     Checkpoint saved to               checkpoint.py:229
+                             runs/normal/Mamba4KT_assistments0                  
+                             9_20261030-033430_fold0_bs64/last                  
+                             _checkpoint.pth                                    
+[10/30/26 03:36:04] INFO     Epoch 12/150 took 5.14s (train  base_trainer.py:610
+                             4.68s, val 0.44s)                                  
+                    INFO     Epoch 13/150                    base_trainer.py:575
+[10/30/26 03:36:04] INFO     Checkpoint saved to               checkpoint.py:229
+                             runs/normal/Mamba4KT_assistments0                  
+                             9_20261030-033430_fold0_bs64/last                  
+                             _checkpoint.pth                                    
+[10/30/26 03:36:09] INFO     Epoch 13/150 took 5.17s (train  base_trainer.py:610
+                             4.67s, val 0.45s)                                  
+                    INFO     Epoch 14/150                    base_trainer.py:575
+[10/30/26 03:36:09] INFO     Checkpoint saved to               checkpoint.py:229
+                             runs/normal/Mamba4KT_assistments0                  
+                             9_20261030-033430_fold0_bs64/last                  
+                             _checkpoint.pth                                    
+[10/30/26 03:36:14] INFO     Epoch 14/150 took 5.14s (train  base_trainer.py:610
+                             4.66s, val 0.43s)                                  
+                    INFO     Early stopping triggered at     base_trainer.py:621
+                             epoch 14                                           
+                    INFO     Training complete               base_trainer.py:626
+[10/30/26 03:36:14] INFO     Checkpoint saved to               checkpoint.py:229
+                             runs/normal/Mamba4KT_assistments0                  
+                             9_20261030-033430_fold0_bs64/last                  
+                             _checkpoint.pth                                    
+                    INFO     Total time: 0:01:44 | 14       base_trainer.py:1011
+                             epochs | avg 7.50s/epoch                           

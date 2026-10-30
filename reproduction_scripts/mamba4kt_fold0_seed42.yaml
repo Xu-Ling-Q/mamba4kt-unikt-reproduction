@@ -1,0 +1,39 @@
+general:
+  seed: 42
+  deterministic: true
+  cloud_tracking: false
+  skip_test: true
+  progress: none
+  pin_memory: true
+compile:
+  compile: false
+early_stopping:
+  monitor: auc
+  mode: max
+  patience: 10
+  min_delta: 0.0
+experiment:
+  model_name: Mamba4KT
+data:
+  dataset: assistments09
+  data_base_path: /mnt/e/StudyWork/sota_kt_lab/work/mamba4kt_official_20261030/unikt_data
+  fold: 0
+  kfold: 5
+  min_seq_len: 3
+  max_seq_len: 200
+  truncation_stage: post_expansion
+  test_ratio: 0.2
+model:
+  d_model: 128
+  n_blocks: 5
+  d_state: 16
+  d_conv: 4
+  expand: 2
+  dropout: 0.1
+  use_rasch: true
+  separate_qa: 0
+  l2: 0.00001
+  epochs: 150
+  learning_rate: 0.001
+  weight_decay: 0.0
+  batch_size: 64

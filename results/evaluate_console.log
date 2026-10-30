@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/mnt/e/StudyWork/sota_kt_lab/work/mamba4kt_official_20261030/evaluate_pykt_question_window.py", line 382, in <module>
+    main()
+  File "/mnt/e/StudyWork/sota_kt_lab/work/mamba4kt_official_20261030/evaluate_pykt_question_window.py", line 186, in main
+    model.load_state_dict(checkpoint["model_state_dict"])
+                          ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'model_state_dict'
