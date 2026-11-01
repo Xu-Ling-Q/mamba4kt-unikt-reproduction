@@ -1,0 +1,86 @@
+{
+  "algorithm": "SHA256",
+  "generated_at": "2026-11-01T14:47:03+08:00",
+  "files": {
+    "work/mamba4kt_algebra2005_20261101/FINAL_REPORT.md": {
+      "sha256": "900D6092413546275ACBDEC7DBA08253086FBCA5FBBCAD176AC3305E1CC944AB",
+      "bytes": 7537
+    },
+    "work/mamba4kt_algebra2005_20261101/final_summary.json": {
+      "sha256": "43A636D5D339A87D6F8F36D018C8C473F3F909CC1E6700C7AC15030419E6164F",
+      "bytes": 5055
+    },
+    "work/mamba4kt_algebra2005_20261101/data_count_audit.json": {
+      "sha256": "B77F0AFA6157CC736DD4A11D98FE1098BB2A93602A5ED5442741F0D24EF79EEF",
+      "bytes": 2162
+    },
+    "work/mamba4kt_algebra2005_20261101/evaluation_champion_d256_lr0.002/result.json": {
+      "sha256": "DC383A9D2BD9D911DE50D3C6557B073B6C87B54FECE66E83C33BBFC77A61338F",
+      "bytes": 27524
+    },
+    "work/mamba4kt_algebra2005_20261101/evaluation_champion_d256_lr0.002/question_window_arrays.npz": {
+      "sha256": "6028DC6A0B1D17AF8315AB869ADC12B8085E533E5218DD053376D93427AB5620",
+      "bytes": 661364
+    },
+    "work/mamba4kt_algebra2005_20261101/evaluation_champion_d256_lr0.002/question_window_predictions.tsv": {
+      "sha256": "2BB665C1B0C3AF24043AF148C6736D46D55470B3666EA6673FB9350D8C2CD336",
+      "bytes": 1474440
+    },
+    "work/mamba4kt_algebra2005_20261101/grid_al05/results.json": {
+      "sha256": "BBB1A122F8933D5D47C1E2204DF1C731625423F0540B24DDC7BC7EA96A6CB406",
+      "bytes": 8506
+    },
+    "work/mamba4kt_algebra2005_20261101/grid_al05/resources/d256_lr0.002.json": {
+      "sha256": "0762A0AFC355623B1F218DCFAA7B0E806F5E89EBA8FB64D272FB177BB54230DF",
+      "bytes": 351
+    },
+    "work/mamba4kt_algebra2005_20261101/pykt_data/al05_preprocess_manifest.json": {
+      "sha256": "966CC3EBAC34F7EAC964D0D0E36B4D5B5108C479206CF5FF5C63AD6E9354C5F9",
+      "bytes": 3123
+    },
+    "work/mamba4kt_algebra2005_20261101/pykt_data/al05_question_window_alignment_audit.json": {
+      "sha256": "2204C2955241A2B076A4367BF02977986E0E26A77CD84982A31F7CC0D2A62AB1",
+      "bytes": 503
+    },
+    "work/mamba4kt_algebra2005_20261101/pykt_data/test_question_window_sequences.csv": {
+      "sha256": "EB896FC7540D26A78D88DA4AF4CDE66B4167A2957BE5C6F32A0CAF35393A4512",
+      "bytes": 995001237
+    },
+    "work/mamba4kt_algebra2005_20261101/unikt_data/al05_unikt_adapter_manifest.json": {
+      "sha256": "78A3352E161416E27E59593318EAA84C3AE1CEB3467A118408634AD3B9E61DDA",
+      "bytes": 1459
+    },
+    "work/mamba4kt_algebra2005_20261101/unikt_data/algebra2005/algebra2005_split_skill_sequence.parquet": {
+      "sha256": "06231558BBB7674629314F44416C818D3A19D4D5E903DDA61EF062EC24DAB135",
+      "bytes": 4092456
+    },
+    "work/mamba4kt_algebra2005_20261101/unikt_data/algebra2005/algebra2005_windowlate.parquet": {
+      "sha256": "A9F417E2CFD81F2161DA48FEC8E85353E770AF8ACDD7F41B9E4A577C35540708",
+      "bytes": 5145
+    },
+    "work/mamba4kt_official_20261030/UniKT/model/Mamba4KT/Mamba4KT_model.py": {
+      "sha256": "F2F0756204FC7B013E00509ECB3491F2E7B27D67D7850D9008D78358CD5C2D69",
+      "bytes": 8927
+    },
+    "work/mamba4kt_official_20261030/UniKT/model/Mamba4KT/Mamba4KT_data.py": {
+      "sha256": "E9704964FBF6DCF74BD23ECA6F553F1212D00E96DD4A7C8E1A27F07FC9C27811",
+      "bytes": 2872
+    },
+    "work/mamba4kt_official_20261030/UniKT/model/Mamba4KT/Mamba4KT_trainer.py": {
+      "sha256": "51281B91600158ECECC7765F8D1DAE2DB1EB99B6DCC1691251A5100F8CD5578F",
+      "bytes": 8505
+    },
+    "work/mamba4kt_official_20261030/UniKT/runs/normal/Mamba4KT_algebra2005_20261101-113842_fold0_bs64/run_config.yaml": {
+      "sha256": "229C83F62BA02BFB4A17A1B4EE18CB43F0D4BD00CBB79A529844E7E4445C6BA9",
+      "bytes": 1100
+    },
+    "work/mamba4kt_official_20261030/UniKT/runs/normal/Mamba4KT_algebra2005_20261101-113842_fold0_bs64/best_model.pth": {
+      "sha256": "27D2034162DB5E3106EF8D18C7FE1C0E579689E75E178D2448004860CEECD5BB",
+      "bytes": 12275330
+    },
+    "pykt-toolkit/data/algebra2005/source/algebra_2005_2006.zip": {
+      "sha256": "118BA5063AA3B428B4072D17533D158F25BDE8072645A70058451E04449B2CE9",
+      "bytes": 22438892
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "windowauclate_mean": 0.8140126466044022,
+  "windowacclate_mean": 0.8063670692440175,
+  "question_window_rows": 135246,
+  "question_window_groups": 93481,
+  "peak_gpu_memory_allocated_bytes": 123603968,
+  "result": "/mnt/e/StudyWork/sota_kt_lab/work/mamba4kt_algebra2005_20261101/evaluation_champion_d256_lr0.002/result.json"
+}

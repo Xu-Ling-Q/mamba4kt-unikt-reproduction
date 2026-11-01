@@ -1,0 +1,113 @@
+{
+  "date": "2026-11-01",
+  "dataset": "algebra2005",
+  "model": "Mamba4KT",
+  "claim_status": "third_party_implementation_single_fold_single_seed",
+  "paper_safe_claim": "Evaluation of the third-party UniKT Mamba4KT implementation under the unified Algebra2005 question-window protocol.",
+  "official_author_end_to_end_reproduction": false,
+  "implementation": {
+    "url": "https://github.com/szhhwh/UniKT/tree/main/model/Mamba4KT",
+    "git_commit": "0493bfbba31373a3058f287cd6625ed10d48895e",
+    "third_party": true,
+    "local_adaptations": [
+      "prediction_head switch for UniKT and paper head variants",
+      "optional KT_DATALOADER_WORKERS environment setting used with value 1",
+      "trainer passes prediction_head into the model"
+    ]
+  },
+  "protocol": {
+    "training": "pyKT-derived Algebra2005 fold 0, seed 42, validation-AUC model selection",
+    "evaluation": "pyKT question-window late-mean",
+    "primary_metric": "windowauclate_mean",
+    "fold": 0,
+    "seed": 42,
+    "kfold": 5,
+    "hyperparameter_candidates": 12,
+    "test_used_for_hyperparameter_selection": false
+  },
+  "champion": {
+    "d_model": 256,
+    "n_blocks": 5,
+    "d_state": 16,
+    "d_conv": 4,
+    "expand": 2,
+    "dropout": 0.1,
+    "learning_rate": 0.002,
+    "batch_size": 64,
+    "separate_qa": true,
+    "prediction_head": "unikt",
+    "total_parameters": 3063611,
+    "best_epoch_zero_based": 2,
+    "epochs_completed": 13,
+    "validation_auc": 0.9156417516899358,
+    "validation_acc": 0.8619446976602856
+  },
+  "test_metrics": {
+    "windowauclate_mean": 0.8140126466044022,
+    "windowacclate_mean": 0.8063670692440175,
+    "windowaucconcepts": 0.8148889786066025,
+    "windowaccconcepts": 0.7776126465847418,
+    "selected_targets": 135246,
+    "question_window_groups": 93481,
+    "question_window_rows": 125363,
+    "independent_windowauclate_mean": 0.8140126466044022,
+    "independent_windowacclate_mean": 0.8063670692440175,
+    "group_bootstrap_interval_approx": [0.81091061, 0.8171571]
+  },
+  "comparability": {
+    "can_compare_with_asikt_0_7978_directly": false,
+    "reason": "Mamba4KT is evaluated on Algebra2005, while the local ASIKT reproduction and the 0.7978 project threshold concern ASSIST2009. Dataset, test file, and implementation settings are not matched.",
+    "required_for_direct_comparison": [
+      "evaluate ASIKT on the exact same Algebra2005 question-window test file, or evaluate Mamba4KT on the same ASSIST2009 protocol",
+      "use matched split, checkpoint-selection rule, and metric",
+      "report multiple folds and seeds for robustness"
+    ]
+  },
+  "data": {
+    "archive_path": "E:/StudyWork/sota_kt_lab/pykt-toolkit/data/algebra2005/source/algebra_2005_2006.zip",
+    "archive_bytes": 22438892,
+    "archive_sha256": "118ba5063aa3b428b4072d17533d158f25bde8072645a70058451e04449b2ce9",
+    "archive_source": "USTC public mirror",
+    "archive_url": "https://base.ustc.edu.cn/data/KDD_Cup_2010/algebra_2005_2006.zip",
+    "raw_interactions": 809694,
+    "interactions_after_missing_kc_drop": 607025,
+    "concept_expanded_events_before_window_min_length_filter": 884102,
+    "concept_expanded_events_after_window_min_length_filter": 884098,
+    "train_events": 748692,
+    "test_events": 135406,
+    "users": 574,
+    "train_valid_users": 460,
+    "test_users": 114,
+    "questions": 173113,
+    "concepts": 112,
+    "unresolved_user_supplied_questions_without_concepts": 9926,
+    "current_converter_questions_without_concepts_after_drop": 0
+  },
+  "resources": {
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_total_mib": 6144,
+    "peak_grid_whole_gpu_mib": 5654,
+    "peak_champion_whole_gpu_mib": 5160,
+    "peak_wsl_memory_mib": 5180,
+    "wsl_memory_limit_mib": 7868,
+    "evaluation_peak_allocated_bytes": 123603968,
+    "evaluation_peak_reserved_bytes": 140509184,
+    "out_of_memory": false,
+    "python_environment": {
+      "machine_learning_available": true,
+      "machine_learning_missing": ["mamba_ssm", "causal_conv1d"],
+      "training_environment": "/home/lpq/.venvs/unikt-mamba in WSL",
+      "new_working_environment_created": false
+    }
+  },
+  "evidence": {
+    "result_json": "work/mamba4kt_algebra2005_20261101/evaluation_champion_d256_lr0.002/result.json",
+    "question_window_arrays": "work/mamba4kt_algebra2005_20261101/evaluation_champion_d256_lr0.002/question_window_arrays.npz",
+    "question_window_predictions": "work/mamba4kt_algebra2005_20261101/evaluation_champion_d256_lr0.002/question_window_predictions.tsv",
+    "grid_results": "work/mamba4kt_algebra2005_20261101/grid_al05/results.json",
+    "preprocess_manifest": "work/mamba4kt_algebra2005_20261101/pykt_data/al05_preprocess_manifest.json",
+    "alignment_audit": "work/mamba4kt_algebra2005_20261101/pykt_data/al05_question_window_alignment_audit.json",
+    "adapter_manifest": "work/mamba4kt_algebra2005_20261101/unikt_data/al05_unikt_adapter_manifest.json",
+    "checkpoint": "work/mamba4kt_official_20261030/UniKT/runs/normal/Mamba4KT_algebra2005_20261101-113842_fold0_bs64/best_model.pth"
+  }
+}

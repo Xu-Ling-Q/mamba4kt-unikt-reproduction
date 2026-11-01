@@ -1,0 +1,18 @@
+{
+  "dataset": "algebra2005",
+  "device": "cpu",
+  "fold": 0,
+  "train_sequences": 3110,
+  "validation_sequences": 870,
+  "test_fixture_samples": 114,
+  "test_loader_batches": 2,
+  "train_sample_length": 200,
+  "first_test_batch_shape": [
+    64,
+    200
+  ],
+  "first_test_batch_selected_targets": 64,
+  "target_response_masked": true,
+  "num_questions": 173113,
+  "num_skills": 112
+}

@@ -1,0 +1,12 @@
+{
+  "label": "d256_lr0.001",
+  "returncode": 0,
+  "runtime_seconds": 219.097,
+  "baseline_wsl_memory_mib": 1762,
+  "peak_wsl_memory_mib": 5160,
+  "peak_training_process_tree_rss_mib": 9036,
+  "baseline_gpu_memory_mib": 2554,
+  "peak_gpu_memory_mib": 4728,
+  "sample_count": 106,
+  "gpu_memory_scope": "whole GPU, including unrelated host processes"
+}

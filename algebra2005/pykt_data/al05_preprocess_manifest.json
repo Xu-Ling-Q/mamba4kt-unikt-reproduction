@@ -1,0 +1,107 @@
+{
+  "dataset": "algebra2005",
+  "source": {
+    "claim": "obtained from the USTC public mirror; not a direct CMU download",
+    "url": "https://base.ustc.edu.cn/data/KDD_Cup_2010/algebra_2005_2006.zip",
+    "archive_bytes": 22438892,
+    "archive_sha256": "118ba5063aa3b428b4072d17533d158f25bde8072645a70058451e04449b2ce9",
+    "train_member": "algebra_2005_2006/algebra_2005_2006_train.txt",
+    "train_bytes": 226670310,
+    "train_sha256": "19528668530108555e344e5bfcc68c762f63a458a32038599d189667e4f10407"
+  },
+  "preprocessing": {
+    "implementation": "pyKT AL05 preprocessing and split primitives; test windows emitted one user at a time",
+    "min_seq_len": 3,
+    "max_seq_len": 200,
+    "test_ratio": 0.2,
+    "random_state": 1024,
+    "kfold": 5,
+    "statistics_after_drop": {
+      "interactions": 607025,
+      "users": 574,
+      "questions": 173113,
+      "concepts": 112,
+      "avg_interactions_per_user": 1057.5348,
+      "avg_concepts_per_question": 1.3634,
+      "questions_without_concepts": 0
+    },
+    "statistics_comparison": {
+      "user_supplied": {
+        "users": 574,
+        "questions": 173113,
+        "concepts": 112,
+        "interactions": 884102,
+        "questions_without_concepts": 9926
+      },
+      "observed_after_drop": {
+        "interactions": 607025,
+        "users": 574,
+        "questions": 173113,
+        "concepts": 112,
+        "avg_interactions_per_user": 1057.5348,
+        "avg_concepts_per_question": 1.3634,
+        "questions_without_concepts": 0
+      },
+      "matches": {
+        "users": true,
+        "questions": true,
+        "concepts": true,
+        "interactions": false,
+        "questions_without_concepts": false
+      }
+    },
+    "data_txt": {
+      "users": 574,
+      "interactions": 607025
+    },
+    "model_vocabulary_after_min_seq_filter": {
+      "users": 574,
+      "questions": 173113,
+      "concepts": 112,
+      "max_concepts": 7
+    },
+    "split": {
+      "train_valid_users": 460,
+      "held_out_test_users": 114,
+      "fold_user_counts": {
+        "0": 92,
+        "1": 92,
+        "2": 92,
+        "3": 92,
+        "4": 92
+      },
+      "train_valid_sequence_rows": 3980,
+      "test_sequence_rows": 732,
+      "question_window_rows": 125363,
+      "question_window_selected_targets": 135246,
+      "question_window_groups": 93481
+    },
+    "data_config": {
+      "dpath": "/mnt/e/StudyWork/sota_kt_lab/work/mamba4kt_algebra2005_20261101/pykt_data",
+      "num_q": 173113,
+      "num_c": 112,
+      "input_type": [
+        "questions",
+        "concepts"
+      ],
+      "max_concepts": 7,
+      "min_seq_len": 3,
+      "maxlen": 200,
+      "emb_path": "",
+      "train_valid_original_file": "train_valid.csv",
+      "train_valid_file": "train_valid_sequences.csv",
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "test_original_file": "test.csv",
+      "test_file": "test_sequences.csv",
+      "test_window_file": "test_window_sequences.csv",
+      "test_question_file": "test_question_sequences.csv",
+      "test_question_window_file": "test_question_window_sequences.csv"
+    }
+  }
+}

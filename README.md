@@ -1,10 +1,17 @@
 # Mamba4KT Reproduction (Unified Protocol)
 
-Reproduction of Mamba4KT on the project's **unified ASSIST2009 fold-0
-question-window protocol**, so the result is directly comparable with other
-models evaluated on the same data split, checkpoint rule, and metric
-(see the ASIKT reproduction in
+Reproduction of Mamba4KT on the project's **unified question-window
+protocol**, so the result is directly comparable with other models evaluated
+on the same data split, checkpoint rule, and metric (see the ASIKT
+reproduction in
 [asikt-official-reproduction](https://github.com/Xu-Ling-Q/asikt-official-reproduction)).
+
+Two datasets are included in this repository:
+
+- **ASSIST2009** (`results/`): the primary unified-protocol comparison number.
+- **Algebra2005** (`algebra2005/`): a second-dataset single-fold evaluation
+  on the same pyKT question-window protocol (full details in
+  `algebra2005/FINAL_REPORT.md`).
 
 ## Important attribution note
 
@@ -39,6 +46,34 @@ Same-protocol references:
 | Mamba4KT (UniKT head, this repo) | 0.7771055 |
 | Official ASIKT (unified protocol) | 0.7815264 |
 | Project `r316_transfer_ledger` | 0.7881642 |
+
+## Result (Algebra2005, fold 0, seed 42, question-window)
+
+Reported metric: `windowauclate_mean` (same pyKT question-window late-mean
+chain as the ASSIST2009 run above).
+
+| Champion configuration | Value |
+| --- | ---: |
+| d_model / n_blocks / d_state / d_conv / expand | 256 / 5 / 16 / 4 / 2 |
+| learning_rate / batch_size / dropout | 0.002 / 64 / 0.1 |
+| prediction_head | unikt (`separate_qa=true`) |
+| Total parameters | 3,063,611 |
+| Best val AUC (epoch 2, zero-based) | 0.9156418 |
+| Test `windowauclate_mean` | **0.8140126** |
+| Test `windowacclate_mean` | 0.8063671 |
+| Test `windowaucconcepts` | 0.8148890 |
+| Question-window rows / groups / targets | 125,363 / 93,481 / 135,246 |
+| Group bootstrap interval (approx.) | [0.810911, 0.817157] |
+
+- Hyperparameters selected on validation AUC only (12 candidates, test never
+  used for selection); test evaluated once on the champion checkpoint.
+- The champion checkpoint SHA256, every grid/eval config, and all audit
+  manifests are recorded in `algebra2005/SHA256SUMS.json` and
+  `algebra2005/final_summary.json`.
+- **Do not compare 0.8140 (Algebra2005) against the ASSIST2009 numbers above
+  or against ASIKT's 0.7815**: different dataset and test file. A matched
+  ASIKT-on-Algebra2005 run is required for any same-protocol cross-model
+  claim on this dataset.
 
 ## Protocol
 
@@ -85,6 +120,18 @@ results/
   evaluation_*/result.json  per-variant unified evaluation (full metrics)
   grid_unikt/, grid_paper_faithful_run1/   grid search results
   audits/                   per-run independent audits
+algebra2005/
+  final_summary.json        machine-readable Algebra2005 result
+  FINAL_REPORT.md           full Algebra2005 report (incl. data provenance)
+  SHA256SUMS.json           SHA256 of source, checkpoints, and test windows
+  mamba4kt_algebra2005_fold0_seed42.yaml    run config (champion)
+  al05_dataset_smoke.json, data_count_audit.json
+  scripts/                  data prep, grid, evaluation, and audit scripts
+  grid_al05/                grid results (12 candidates) + per-run resources
+  evaluation_champion_d256_lr0.002/result.json   champion unified eval
+  evaluation_d128_lr0.001/result.json            secondary run
+  pykt_data/                preprocessing manifests + alignment audit
+  unikt_data/               UniKT adapter manifest
 ```
 
 ## Environment

@@ -1,0 +1,57 @@
+{
+  "dataset": "algebra2005",
+  "source_archive": {
+    "path": "pykt-toolkit/data/algebra2005/source/algebra_2005_2006.zip",
+    "bytes": 22438892,
+    "sha256": "118ba5063aa3b428b4072d17533d158f25bde8072645a70058451e04449b2ce9",
+    "source_label": "USTC public mirror",
+    "url": "https://base.ustc.edu.cn/data/KDD_Cup_2010/algebra_2005_2006.zip"
+  },
+  "observed_counts": {
+    "raw_interactions": 809694,
+    "raw_users": 574,
+    "raw_questions": 210710,
+    "raw_concepts": 112,
+    "raw_questions_without_concepts": 37597,
+    "after_missing_kc_drop_interactions": 607025,
+    "after_missing_kc_drop_users": 574,
+    "after_missing_kc_drop_questions": 173113,
+    "after_missing_kc_drop_concepts": 112,
+    "after_missing_kc_drop_questions_without_concepts": 0,
+    "concept_expanded_events_before_min_length_filter": 884102,
+    "concept_expanded_events_after_min_length_filter": 884098,
+    "train_events_after_min_length_filter": 748692,
+    "test_events_after_min_length_filter": 135406,
+    "dropped_short_tail_events": 4,
+    "dropped_short_tail_users": {
+      "train": [41, 124],
+      "test": [326]
+    },
+    "test_question_window_rows": 125363,
+    "test_question_window_selected_targets": 135246,
+    "test_question_window_groups": 93481
+  },
+  "supplied_vs_observed": {
+    "supplied": {
+      "users": 574,
+      "questions": 173113,
+      "concepts": 112,
+      "interactions": 884102,
+      "questions_without_concepts": 9926
+    },
+    "matches": {
+      "users": true,
+      "questions": true,
+      "concepts": true,
+      "interactions_as_concept_expanded_events": true,
+      "questions_without_concepts": false
+    },
+    "note": "The supplied 884102 matches pyKT concept-expanded events, not raw interactions. The supplied 9926 is not reproduced by the current converter after missing-KC removal; its original definition must be established before use."
+  },
+  "alignment": {
+    "generator": "pyKT split_datasets.generate_question_sequences",
+    "sampled_test_users": [0, 57, 113],
+    "exact_match_to_pykt_generator": true,
+    "question_window_sha256": "eb896fc7540d26a78d88da4af4cde66b4167a2957be5c6f32a0caf35393a4512"
+  }
+}

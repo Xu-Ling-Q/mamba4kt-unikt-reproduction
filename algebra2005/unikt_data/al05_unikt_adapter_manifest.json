@@ -1,0 +1,47 @@
+{
+  "dataset": "algebra2005",
+  "mapping": "one concept-expanded pyKT event per skill; each event keeps its source question ID and duplicated response label",
+  "sequence_count": 3980,
+  "train_valid_interactions": 748692,
+  "fold_sequence_counts": {
+    "0": 870,
+    "1": 872,
+    "2": 782,
+    "3": 751,
+    "4": 705
+  },
+  "train_valid_users": 460,
+  "test_users": 114,
+  "windowlate_loader_fixture_samples": 114,
+  "windowlate_loader_fixture_used_for_scoring": false,
+  "num_questions": 173113,
+  "num_skills": 112,
+  "source_files": {
+    "data_config.generated.json": {
+      "sha256": "9724c17e5f0250389051bca2796c6785eb361483f26e0d5ea412bc239114283f",
+      "bytes": 848
+    },
+    "train_valid_sequences.csv": {
+      "sha256": "06c88114094366023951bb21f4b3bf9c66900bf70083701fccac97b385434da0",
+      "bytes": 22019410
+    },
+    "test_sequences.csv": {
+      "sha256": "8e902c7bc18e089c01c01a325f78ba8e91d6392144c43701ef9709f89085f1a6",
+      "bytes": 4902354
+    }
+  },
+  "generated_files": {
+    "algebra2005_split_skill_sequence.parquet": {
+      "sha256": "06231558bbb7674629314f44416c818d3a19d4d5e903dda61ef062ec24dab135",
+      "bytes": 4092456
+    },
+    "algebra2005_windowlate.parquet": {
+      "sha256": "a9f417e2cfd81f2161da48fec8e85353e770af8acdd7f41b9e4a577c35540708",
+      "bytes": 5145
+    },
+    "metadata.json": {
+      "sha256": "0264632ca7a8b6f67d35d12ac3c67c9f0407d6bd69244d48968e9ad445b76a0b",
+      "bytes": 604
+    }
+  }
+}
