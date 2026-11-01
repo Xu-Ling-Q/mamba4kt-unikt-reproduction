@@ -1,0 +1,17 @@
+{
+  "initial_commit": "553c3448685f33b84637601767f309a2bdace8e6",
+  "current_commit": "0493bfbba31373a3058f287cd6625ed10d48895e",
+  "initial_model_sha256": "7a2f9797b3fab728d7c468c6e17da01b1a322145b7c4e3ef3ea0505f21d324a9",
+  "current_model_sha256": "f2f0756204fc7b013e00509ecb3491f2e7b27d67d7850d9008d78358cd5c2d69",
+  "current_profile": {
+    "separate_qa": true,
+    "prediction_head": "unikt"
+  },
+  "state_dict_keys_equal": true,
+  "state_dict_values_equal": true,
+  "parameter_count": 828363,
+  "max_abs_prediction_difference": 0.0,
+  "max_abs_regularizer_difference": 0.0,
+  "allclose_atol_1e_7": true,
+  "scope": "Model constructor, parameters, and forward path only; the AS09 data adapter and unified trainer are not byte-identical to commit 553c344."
+}

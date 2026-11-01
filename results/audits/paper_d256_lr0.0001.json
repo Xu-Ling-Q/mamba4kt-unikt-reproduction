@@ -1,0 +1,28 @@
+{
+  "train_valid_csv_sha256": "61ea4654cf34a8dc1f4e813cd7274e80bd44172fb3b922a2ea57dca9e1cf208e",
+  "window_csv_sha256": "26cc650b450c40547c5df68d0a7e944f462bb90750634b7f71f4f54abb1d2b86",
+  "checkpoint_sha256": "a99ffbf640d23242d6fc6a07e7077d01e1a2bf882d667364c0f73fbcc5006d66",
+  "prediction_head": "paper",
+  "converted_sequences_exact": 3757,
+  "fold_counts": {
+    "0": 741,
+    "1": 741,
+    "2": 750,
+    "3": 778,
+    "4": 747
+  },
+  "train_sequences": 3016,
+  "validation_sequences": 741,
+  "train_validation_test_users_disjoint": true,
+  "asikt_test_qidxs_and_targets_identical": 61882,
+  "checkpoint_best_epoch_zero_based": 8,
+  "recorded_validation_auc": 0.8155762461772058,
+  "recomputed_validation_auc": 0.81557623830256,
+  "validation_adapter_max_abs_difference": 0.0,
+  "real_window_fixture_rows": 128,
+  "real_window_fixture_selected_targets": 528,
+  "window_alignment_matches_raw_model": true,
+  "causality_probe_count": 16,
+  "max_future_response_effect": 1.1920928955078125e-07,
+  "max_history_response_effect": 0.3381367325782776
+}
